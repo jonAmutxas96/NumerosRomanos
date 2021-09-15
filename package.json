@@ -1,0 +1,14 @@
+{
+  "name": "dojo",
+  "version": "1.0.0",
+  "description": "Dojo playground",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "jest": "^27.2.0"
+  }
+}
