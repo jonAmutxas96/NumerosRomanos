@@ -7,5 +7,9 @@ export const numerosRomanos = (numeroArabe) => {
     return 'I';
   }
 
+  if (numeroArabe === 2) {
+    return 'II';
+  }
+
   return "no existe el número 0 en números romanos";
 };
