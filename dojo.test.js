@@ -18,4 +18,8 @@ describe('conversor numero arabes a romanos', () => {
   it ('si el número es 2 se devuleve "II"',()=>{
     expect(numerosRomanos(2)).toBe("II");
   })
+
+  it ('si el número es 5 se devuleve "V"',()=>{
+    expect(numerosRomanos(5)).toBe("V");
+  })
 });
