@@ -22,6 +22,9 @@ export const numerosRomanos = (numeroArabe) => {
   if (numeroArabe === 10) {
     return 'X';
   }
+  if (numeroArabe === 30) {
+    return 'XXX';
+  }
 
   if (numeroArabe === 50) {
     return 'L';

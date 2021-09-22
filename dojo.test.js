@@ -17,16 +17,16 @@ describe('conversor numero arabes a romanos', () => {
 
   it.each([
     [1, 'I'],
-    [2, 'II'], 
-    [3, 'III'],
-    [4, 'IV'],
     [5, 'V'], 
     [10, 'X'], 
     [50, 'L'], 
     [100, 'C'], 
     [500, 'D'], 
-    [1000, 'M']
-
+    [1000, 'M'],
+    [2, 'II'], 
+    [3, 'III'],
+    [4, 'IV'],
+    [30,'XXX'],
   ])('si el número es %i devuelve %s', (arabe, romano) => {
     expect(numerosRomanos(arabe)).toBe(romano);
   })
