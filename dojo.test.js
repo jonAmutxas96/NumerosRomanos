@@ -11,35 +11,16 @@ describe('conversor numero arabes a romanos', () => {
     expect(numerosRomanos(-1)).toBe("no existen numeros negativos en romano");
   })
 
-  it ('si el número es 1 se devuleve "I"',()=>{
-    expect(numerosRomanos(1)).toBe("I");
-  })
-
-  it ('si el número es 2 se devuleve "II"',()=>{
-    expect(numerosRomanos(2)).toBe("II");
-  })
-
-  it ('si el número es 5 se devuleve "V"',()=>{
-    expect(numerosRomanos(5)).toBe("V");
-  })
-
-  it ('si el número es 10 se devuleve "X"',()=>{
-    expect(numerosRomanos(10)).toBe("X");
-  })
-
-  it ('si el número es 50 se devuleve "L"',()=>{
-    expect(numerosRomanos(50)).toBe("L");
-  })
-
-  it ('si el número es 100 se devuleve "C"',()=>{
-    expect(numerosRomanos(100)).toBe("C");
-  })
-
-  it ('si el número es 500 se devuleve "D"',()=>{
-    expect(numerosRomanos(500)).toBe("D");
-  })
-
-  it ('si el número es 1000 se devuleve "M"',()=>{
-    expect(numerosRomanos(1000)).toBe("M");
+  it.each([
+    [1, 'I'],
+    [2, 'II'], 
+    [5, 'V'], 
+    [10, 'X'], 
+    [50, 'L'], 
+    [100, 'C'], 
+    [500, 'D'], 
+    [1000, 'M']
+  ])('si el número es %i devuelve %s', (arabe, romano) => {
+    expect(numerosRomanos(arabe)).toBe(romano);
   })
 });
