@@ -18,7 +18,7 @@ describe('conversor numero arabes a romanos', () => {
   it.each([
     [1, 'I'],
     [5, 'V'], 
-    [10, 'X'], 
+    [10, 'X'],
     [50, 'L'], 
     [100, 'C'], 
     [500, 'D'], 
@@ -27,6 +27,7 @@ describe('conversor numero arabes a romanos', () => {
     [3, 'III'],
     [4, 'IV'],
     [30,'XXX'],
+    [40, "XL"],
   ])('si el número es %i devuelve %s', (arabe, romano) => {
     expect(numerosRomanos(arabe)).toBe(romano);
   })
