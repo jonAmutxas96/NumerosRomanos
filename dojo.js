@@ -31,5 +31,9 @@ export const numerosRomanos = (numeroArabe) => {
     return 'D';
   }
 
+  if (numeroArabe === 1000) {
+    return 'M';
+  }
+
   return "no existe el número 0 en números romanos";
 };
