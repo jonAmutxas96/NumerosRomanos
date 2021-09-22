@@ -43,5 +43,9 @@ export const numerosRomanos = (numeroArabe) => {
     return 'III'
   }
 
+  if (numeroArabe === 4) {
+    return 'IV'
+  }
+
   return "no existe el número 0 en números romanos";
 };
