@@ -19,5 +19,9 @@ export const numerosRomanos = (numeroArabe) => {
     return 'X';
   }
 
+  if (numeroArabe === 50) {
+    return 'L';
+  }
+
   return "no existe el número 0 en números romanos";
 };

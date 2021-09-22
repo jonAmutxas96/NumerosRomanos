@@ -26,4 +26,8 @@ describe('conversor numero arabes a romanos', () => {
   it ('si el número es 10 se devuleve "X"',()=>{
     expect(numerosRomanos(10)).toBe("X");
   })
+
+  it ('si el número es 50 se devuleve "L"',()=>{
+    expect(numerosRomanos(50)).toBe("L");
+  })
 });
