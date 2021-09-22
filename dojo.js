@@ -3,6 +3,10 @@ export const numerosRomanos = (numeroArabe) => {
     return "no existen numeros negativos en romano";
   }
 
+  if(numeroArabe > 3888) {
+    return "no existen numeros superiores a 3888 en romano"
+  }
+
   if (numeroArabe === 1) {
     return 'I';
   }
