@@ -3,5 +3,9 @@ export const numerosRomanos = (numeroArabe) => {
     return "no existen numeros negativos en romano";
   }
 
+  if (numeroArabe === 1) {
+    return 'I';
+  }
+
   return "no existe el número 0 en números romanos";
 };

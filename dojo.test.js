@@ -10,4 +10,8 @@ describe('conversor numero arabes a romanos', () => {
   it ('si el número es negativo informa al usuario',()=>{
     expect(numerosRomanos(-1)).toBe("no existen numeros negativos en romano");
   })
+
+  it ('si el número es 1 se devuleve "I"',()=>{
+    expect(numerosRomanos(1)).toBe("I");
+  })
 });
