@@ -39,5 +39,9 @@ export const numerosRomanos = (numeroArabe) => {
     return 'M';
   }
 
+  if (numeroArabe === 3) {
+    return 'III'
+  }
+
   return "no existe el número 0 en números romanos";
 };

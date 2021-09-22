@@ -23,7 +23,8 @@ describe('conversor numero arabes a romanos', () => {
     [50, 'L'], 
     [100, 'C'], 
     [500, 'D'], 
-    [1000, 'M']
+    [1000, 'M'],
+    [3, 'III']
   ])('si el número es %i devuelve %s', (arabe, romano) => {
     expect(numerosRomanos(arabe)).toBe(romano);
   })
