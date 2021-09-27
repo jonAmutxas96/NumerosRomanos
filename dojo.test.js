@@ -28,6 +28,8 @@ describe('conversor numero arabes a romanos', () => {
     [4, 'IV'],
     [30,'XXX'],
     [40, "XL"],
+    [9,"IX"],
+    [49,'IL']
   ])('si el número es %i devuelve %s', (arabe, romano) => {
     expect(numerosRomanos(arabe)).toBe(romano);
   })

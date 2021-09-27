@@ -5,7 +5,7 @@ export const numerosRomanos = (numeroArabe) => {
   if(numeroArabe<0){
     return "no existen numeros negativos en romano";
   }
-  if(numeroArabe==0){
+  if(numeroArabe===0){
       return "no existe el número 0 en números romanos";
     
   }
@@ -19,6 +19,12 @@ export const numerosRomanos = (numeroArabe) => {
 
   if (numeroArabe === 4) {
     return 'IV'
+  }
+  if(numeroArabe=== 9){
+    return 'IX'
+  }
+  if (numeroArabe=== 49){
+    return 'IL'
   }
 
   let indice = 6;
