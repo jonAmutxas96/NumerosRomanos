@@ -40,7 +40,8 @@ describe('conversor numero arabes a romanos', () => {
     [995,"VM"],
     [450,"LD"],
     [950,"LM"],
-    [1450,"MLD"]
+    [1450,"MLD"],
+    [14,"XIV"]
   ])('si el número es %i devuelve %s', (arabe, romano) => {
     expect(numerosRomanos(arabe)).toBe(romano);
   })
