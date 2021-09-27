@@ -22,6 +22,9 @@ if (numeroArabe===90){
 if (numeroArabe===490){
   return 'XD';
 }
+if (numeroArabe===990){
+  return 'XM';
+}
 
 
   let indice = 6;
