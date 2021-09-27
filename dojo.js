@@ -20,23 +20,23 @@ export const numerosRomanos = (numeroArabe) => {
     if (numeroArabe >= valorSimboloRomano[indice]){
       resultadoNumeroRomano+= simboloRomano[indice];
       numeroArabe-= valorSimboloRomano[indice];
-    }else if (numeroArabe=== valorSimboloRomano[indice]-1){
+    }else if (numeroArabe=== valorSimboloRomano[indice]-valorSimboloRomano[0]){
       resultadoNumeroRomano+=simboloRomano[0];
       resultadoNumeroRomano+=simboloRomano[indice];
       numeroArabe-= valorSimboloRomano[indice]-1;
-    } else if (numeroArabe=== valorSimboloRomano[indice]-5 && numeroArabe!=5){
+    } else if (numeroArabe=== valorSimboloRomano[indice]-valorSimboloRomano[1] && numeroArabe!=valorSimboloRomano[1]){
       resultadoNumeroRomano+=simboloRomano[1];
       resultadoNumeroRomano+=simboloRomano[indice];
-      numeroArabe-= valorSimboloRomano[indice]-5;
+      numeroArabe-= valorSimboloRomano[indice]-simboloRomano[1];
     }
-    else if (numeroArabe=== valorSimboloRomano[indice]-10){
+    else if (numeroArabe=== valorSimboloRomano[indice]-valorSimboloRomano[2]){
       resultadoNumeroRomano+=simboloRomano[2];
       resultadoNumeroRomano+=simboloRomano[indice];
-      numeroArabe-= valorSimboloRomano[indice]-10;
-    } else if (numeroArabe=== valorSimboloRomano[indice]-50 && numeroArabe!=50){
+      numeroArabe-= valorSimboloRomano[indice]-valorSimboloRomano[2];
+    } else if (numeroArabe=== valorSimboloRomano[indice]-valorSimboloRomano[3] && numeroArabe!=valorSimboloRomano[3]){
       resultadoNumeroRomano+=simboloRomano[3];
       resultadoNumeroRomano+=simboloRomano[indice];
-      numeroArabe-= valorSimboloRomano[indice]-50;
+      numeroArabe-= valorSimboloRomano[indice]-valorSimboloRomano[3];
     }else{
     indice--;
     }
