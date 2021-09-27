@@ -16,7 +16,12 @@ export const numerosRomanos = (numeroArabe) => {
   if (numeroArabe === 40) {
     return 'XL';
   }
-
+if (numeroArabe===90){
+  return 'XC';
+}
+if (numeroArabe===490){
+  return 'XD';
+}
 
 
   let indice = 6;

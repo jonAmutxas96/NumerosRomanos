@@ -30,7 +30,9 @@ describe('conversor numero arabes a romanos', () => {
     [40, "XL"],
     [9,"IX"],
     [49,'IL'],
-    [99,"IC"]
+    [99,"IC"],
+    [90, "XC"],
+    [490, "XD"]
   ])('si el número es %i devuelve %s', (arabe, romano) => {
     expect(numerosRomanos(arabe)).toBe(romano);
   })
