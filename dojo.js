@@ -17,25 +17,18 @@ export const numerosRomanos = (numeroArabe) => {
     return 'XL';
   }
 
-  if (numeroArabe === 4) {
-    return 'IV'
-  }
-  if(numeroArabe=== 9){
-    return 'IX'
-  }
-  if (numeroArabe=== 49){
-    return 'IL'
-  }
-  if (numeroArabe===99){
-    return "IC"
-  }
+
 
   let indice = 6;
   while(numeroArabe >0){
     if (numeroArabe >= valorSimboloRomano[indice]){
       resultadoNumeroRomano+= simboloRomano[indice];
       numeroArabe-= valorSimboloRomano[indice];
-    }else{
+    }else if (numeroArabe=== valorSimboloRomano[indice]-1){
+      resultadoNumeroRomano+=simboloRomano[0];
+      resultadoNumeroRomano+=simboloRomano[indice];
+      numeroArabe-= valorSimboloRomano[indice]-1;
+    } else{
     indice--;
     }
   }
