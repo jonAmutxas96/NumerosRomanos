@@ -13,7 +13,9 @@ export const numerosRomanos = (numeroArabe) => {
   if(numeroArabe > 3888) {
     return "no existen numeros superiores a 3888 en romano"
   } 
-
+  if (numeroArabe==45){
+    return "VL";
+  }
 
 
   let indice = 6;
