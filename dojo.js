@@ -36,7 +36,11 @@ export const numerosRomanos = (numeroArabe) => {
       resultadoNumeroRomano+=simboloRomano[0];
       resultadoNumeroRomano+=simboloRomano[indice];
       numeroArabe-= valorSimboloRomano[indice]-1;
-    } 
+    } else if (numeroArabe=== valorSimboloRomano[indice]-5 && numeroArabe!=5){
+      resultadoNumeroRomano+=simboloRomano[1];
+      resultadoNumeroRomano+=simboloRomano[indice];
+      numeroArabe-= valorSimboloRomano[indice]-5;
+    }
     else if (numeroArabe=== valorSimboloRomano[indice]-10){
       resultadoNumeroRomano+=simboloRomano[2];
       resultadoNumeroRomano+=simboloRomano[indice];
