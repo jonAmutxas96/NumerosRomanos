@@ -22,6 +22,9 @@ export const numerosRomanos = (numeroArabe) => {
   if (numeroArabe==495){
     return "VD";
   }
+  if (numeroArabe==995){
+    return "VM";
+  }
 
 
   let indice = 6;
