@@ -13,18 +13,7 @@ export const numerosRomanos = (numeroArabe) => {
   if(numeroArabe > 3888) {
     return "no existen numeros superiores a 3888 en romano"
   } 
-  if (numeroArabe === 40) {
-    return 'XL';
-  }
-if (numeroArabe===90){
-  return 'XC';
-}
-if (numeroArabe===490){
-  return 'XD';
-}
-if (numeroArabe===990){
-  return 'XM';
-}
+
 
 
   let indice = 6;
@@ -36,7 +25,12 @@ if (numeroArabe===990){
       resultadoNumeroRomano+=simboloRomano[0];
       resultadoNumeroRomano+=simboloRomano[indice];
       numeroArabe-= valorSimboloRomano[indice]-1;
-    } else{
+    } 
+    else if (numeroArabe=== valorSimboloRomano[indice]-10){
+      resultadoNumeroRomano+=simboloRomano[2];
+      resultadoNumeroRomano+=simboloRomano[indice];
+      numeroArabe-= valorSimboloRomano[indice]-10;
+    }else{
     indice--;
     }
   }
