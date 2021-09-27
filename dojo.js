@@ -31,6 +31,9 @@ export const numerosRomanos = (numeroArabe) => {
   if (numeroArabe===950){
     return "LM";
   }
+  if (numeroArabe===1450){
+    return "MLD";
+  }
 
   let indice = 6;
   while(numeroArabe >0){
