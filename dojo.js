@@ -25,7 +25,9 @@ export const numerosRomanos = (numeroArabe) => {
   if (numeroArabe==995){
     return "VM";
   }
-
+  if (numeroArabe===450){
+    return "LD";
+  }
 
   let indice = 6;
   while(numeroArabe >0){
